@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #121214;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    padding-top: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://atomicpapers.com.br/web/wallpapers/planeta-terra-espaco-roxo/5120x2880.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: color;
+}
+
+main #title {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 30px;
+    line-height: 50px;
+}
+
+main #p-description {
+    font-size: 18px;
+    color: #E1E1E6;
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+    max-width: 480px;
+    line-height: 26px;
+}
+
+main #content-data {
+    display: flex;
+    gap: 1rem;
+}
+
+main .data {
+    font-size: 19px;
+    color: #33D5A6;
+    margin-top: 30px;
+}
+
+#button-next-level {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 230px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 40px 0 100px 0;
+    text-decoration: none;
+    color: #000;
+    background: linear-gradient(
+        #9472FB,
+        #6FA1DF 20%,
+        #35E8B3,
+        #DCD55F
+    );
+}
+
+#content-features {
+    width: 100%;
+    max-width: 2000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 65px;
+    padding-bottom: 100px;
+    border-bottom: 2px dotted #47476e;
+}
+
+#content-features .card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-info p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #b7cacf;
+    text-align: center;
+}
+
+#container-nlw {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.trilhas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 10rem;
+}
+
+.trilhas #title-content-nlw {
+    font-size: 32px;
+    width: 40%;
+    max-width: 550px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.trilhas .p-trilha {
+    font-size: 16px;
+    color: #C4C4CC;
+    width: 40%;
+    line-height: 25px;
+    max-width: 1000px;
+}
+
+.cards-trilhas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 60px;
+}
+
+.cards-trilhas .card-trilha {
+    width: 100%;
+    max-width: 650px;
+    padding: 32px;
+    border: 1px solid #29292e;
+    background: #121214;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-trilha .logo-trilha {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo-trilha span {
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.logo-trilha .color-explorer {
+    font-size: 40px;
+    color: #42D3FF;
+}
+
+.card-trilha .p-explorer {
+    font-size: 15px;
+    color: #fff;
+    line-height: 23px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.card-trilha h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #dddd09;
+    letter-spacing: 3px;
+}
+
+.card-trilha .ignite-color {
+    font-size: 40px;
+    color: #00B37E;
+}
+
+.card-trilha .p-ignite {
+    color: #fff;
+    line-height: 23px;
+    width: 100%;
+    max-width: 480px;
+    font-size: 15px;
+}
+
+.seta {
+    margin-bottom: 60px;
+}
+
+#container-nlw-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 200px;
+}
+
+#container-nlw-video .text-video {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+#container-nlw-video #video {
+    height: 500px;
+    width: 95%;
+    background-image: url(https://blog.rocketseat.com.br/content/images/size/w600/2022/04/nlw-next-level-week-blog-rocketseat.png);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #067e06;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-faq {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#container-faq > #stiky-faq {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+#stiky-faq .faq {
+    font-size: 20px;
+    color: #fcfc00;
+}
+
+#stiky-faq .text-faq {
+    font-size: 40px;
+    color: #fff;
+    width: 100%;
+}
+
+#stiky-faq .next-level {
+    margin-top: 2.5rem;
+}
+
+#container-faq #container-questions {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 150px;
+    width: 100%;
+    max-width: 600px;
+    gap: 2.5rem;
+}
+
+#container-questions .questions {
+    height: 80px;
+    width: 100%;
+    background: #202024;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#never-stop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    height: 650px;
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/103/311/653/sci-fi-astronaut-space-hd-wallpaper-preview.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: color;
+    width: 100%;
+}
+
+#never-stop .content {
+    width: 100%;
+    max-width: 1050px;
+}
+
+#never-stop > .content-frase {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-frase .frase {
+    font-size: 40px;
+    margin-top: 60px;
+    width: 100%;
+    max-width: 455px;
+    color: #fff;
+}
+
+#never-stop .hashitag {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.hashitag h2 {
+    font-size: 40px;
+    color: #996DFF;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+}
+
+.content-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+}
+
+footer .content-rodape > ul {
+    display: flex;
+    gap: 5rem;
+}
+
+footer .content-rodape > ul li {
+    font-size: 16px;
+    color: #C4C4CC;
+    list-style: none;
+}
+
+footer .content-rodape a {
+    background: #202024;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    main #title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    main #button-next-level {
+        width: 90%;
+    }
+
+    #stiky-faq .next-level {
+        width: 90%;
+    }
+
+    #content-features .card-info p {
+        font-size: 15px;
+    }
+
+    footer {
+        height: 400px;
+    }
+
+    footer .content-rodape {
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+    }
+
+    .content-rodape ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-info {
+        width: 50%;
+        margin-bottom: 55px;
+    }
+
+    main #p-description {
+        width: 90%;
+    }
+
+    .trilhas .p-trilha {
+        width: 100%;
+        max-width: 0;
+    }
+
+    .trilhas {
+        display: flex;
+        margin-top: 60px;
+        gap: 2rem;
+    }
+
+    #container-nlw > .trilhas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .trilhas > #title-content-nlw {
+        max-width: 800px;
+        width: 100%;
+        text-align: center;
+        font-size: 29px;
+    }
+
+    .trilhas .p-trilha {
+        max-width: 690px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-trilha > .logo-trilha span{
+        font-size: 22px;
+    }
+
+    .card-trilha > .logo-trilha .color-explorer{
+        font-size: 22px;
+    }
+
+    .card-trilha > .logo-trilha .ignite-color{
+        font-size: 22px;
+    }
+
+    #never-stop .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #never-stop .content-frase .frase {
+        font-size: 25px;
+        width: 300px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #never-stop .hashitag h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .cards-trilhas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #container-nlw .cards-trilhas {
+        width: 100%;
+    }
+    
+    #container-nlw .cards-trilhas > .card-trilha {
+        max-width: 95%;
+        width: 95%;
+    }
+}
+
+@media  screen and (max-width: 1100px) {
+    #container-faq {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        max-width: 1500px;
+    }
+
+    #container-faq #stiky-faq {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container-faq #container-questions {
+        display: flex;
+        align-items: center;
+    }
+
+    #stiky-faq .text-faq  {
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    #container-questions .questions {
+        width: 95%;
+    }
+}
