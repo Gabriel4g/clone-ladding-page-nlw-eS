@@ -10,6 +10,14 @@ html {
     scroll-behavior: smooth;
 }
 
+a:hover {
+    opacity: 0.8;
+}
+
+img {
+    max-width: 100%;
+}
+
 body {
     background: #121214;
     height: 100%;
@@ -78,7 +86,8 @@ main #title {
     font-size: 40px;
     color: #fff;
     margin-top: 30px;
-    line-height: 50px;
+    line-height: 55px;
+    max-width: 750px;
 }
 
 main #p-description {
@@ -151,8 +160,84 @@ main .data {
     text-align: center;
 }
 
+#container-about-nlw {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 65px;
+}
+
+#container-about-nlw .content-text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 30px 20px;
+}
+
+.content-text h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    color: #d3d320;
+}
+
+.content-text .text-about {
+    font-size: 32px;
+    line-height: 48px;
+    width: 78%;
+    max-width: 750px;
+}
+
+.content-text .text-about span {
+    color: #996DFF;
+    font-size: 32px;
+}
+
+.content-text .p-about {
+    font-size: 16px;
+    line-height: 25px;
+    width: 78%;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content-text .p-about strong {
+    font-size: 16px;
+}
+
+.content-text a {
+    width: 270px;
+    margin: 2.5rem 0 0 0;
+}
+
+.content-text .content-parcerias {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.content-text .content-parcerias > p {
+    color: #11d6fd;
+    font-size: 16px;
+}
+
+.content-parcerias .parcerias {
+    display: flex;
+    gap: 2rem;
+}
+
+#container-about-nlw img {
+    max-width: 500px;
+}
+
 #container-nlw {
     width: 100%;
+    max-width: 1600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,7 +245,7 @@ main .data {
     margin-bottom: 100px;
 }
 
-.trilhas {
+#container-nlw .trilhas {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,7 +255,6 @@ main .data {
 
 .trilhas #title-content-nlw {
     font-size: 32px;
-    width: 40%;
     max-width: 550px;
     color: #fff;
     margin-top: 50px;
@@ -222,12 +306,16 @@ main .data {
     color: #42D3FF;
 }
 
-.card-trilha .p-explorer {
+.card-trilha .p-explorer, .card-trilha .p-ignite {
     font-size: 15px;
     color: #fff;
     line-height: 23px;
     width: 100%;
     max-width: 600px;
+}
+
+.card-trilha .p-ignite {
+    max-width: 480px;
 }
 
 .card-trilha h2 {
@@ -240,14 +328,6 @@ main .data {
 .card-trilha .ignite-color {
     font-size: 40px;
     color: #00B37E;
-}
-
-.card-trilha .p-ignite {
-    color: #fff;
-    line-height: 23px;
-    width: 100%;
-    max-width: 480px;
-    font-size: 15px;
 }
 
 .seta {
@@ -348,7 +428,6 @@ main .data {
     background-image: url(https://p4.wallpaperbetter.com/wallpaper/103/311/653/sci-fi-astronaut-space-hd-wallpaper-preview.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: color;
     width: 100%;
@@ -367,7 +446,6 @@ main .data {
 .content-frase .frase {
     font-size: 40px;
     margin-top: 60px;
-    width: 100%;
     max-width: 455px;
     color: #fff;
 }
@@ -414,6 +492,28 @@ footer .content-rodape a {
     background: #202024;
     padding: 10px;
     border-radius: 10px;
+}
+
+@media (max-width: 550px) {
+    #container-about-nlw .content-parcerias, .parcerias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-text .text-about, 
+    .content-text .text-about .purple {
+        font-size: 23px;
+        line-height: 40px;
+    }
+
+    .content-text .p-about {
+        width: 100%;
+    }
+
+    .content-text a{
+        width: 95%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -573,5 +673,26 @@ footer .content-rodape a {
     
     #container-questions .questions {
         width: 95%;
+    }
+}
+
+@media (max-width: 1080px) {
+    #container-about-nlw {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container-about-nlw .content-text h1  {
+        width: 100%;
+    }
+
+    #container-about-nlw img {
+        max-width: 50%;
+    }
+
+    #container-nlw .trilhas {
+        padding: 0 20px;
     }
 }

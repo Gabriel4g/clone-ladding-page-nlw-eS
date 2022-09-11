@@ -1,7 +1,7 @@
 const navbarScroll = document.querySelector("#navbar");
 
 function onScroll() {
-    if(window.scrollY > 600) {
+    if(window.scrollY > 900) {
         navbarScroll.style.opacity = 1
     }
 
